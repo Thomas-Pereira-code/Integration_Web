@@ -3,6 +3,7 @@
 }
 @include googleFont(Helvetica);
 
+@use 'variables' as *;
 
 *{
     margin: 0;
@@ -114,6 +115,44 @@ header{
         padding: 150px 50px 150px 50px;
         &:hover{
            background-image: url(images/pic02.jpg);
+        }
+    }
+}
+
+.P2{
+    display: flex;
+    color: white;
+
+    .line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 1px;
+        background-color: white;
+        width: 200px;
+    }
+
+    .P2_gauche{
+        width: 65%;
+        background-image:linear-gradient(rgba(242, 117, 119, 0.8), rgba(242, 117, 119, 0.8)), url(images/pic03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 150px 50px 150px 50px;
+        &:hover{
+            background-image: url(images/pic03.jpg);
+        }
+        
+    }
+
+
+
+    .P2_droite{
+        width: 35%;
+        background-image:linear-gradient(rgba(195, 160, 62, 0.8), rgba(195, 160, 62, 0.8)), url(images/pic04.jpg);
+        padding: 150px 50px 150px 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:hover{
+           background-image: url(images/pic04.jpg);
         }
     }
 }
