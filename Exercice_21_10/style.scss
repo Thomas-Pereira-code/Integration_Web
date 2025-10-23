@@ -99,7 +99,6 @@ header{
     .P1_gauche{
         width: 35%;
         background-image:linear-gradient(rgba(117, 217, 242, 0.8), rgba(117, 217, 242, 0.8)), url(images/pic01.jpg);
-        
         padding: 150px 50px 150px 50px;
         &:hover{
             background-image: url(images/pic01.jpg);
@@ -111,7 +110,7 @@ header{
 
     .P1_droite{
         width: 65%;
-        background-image:linear-gradient(rgba(181, 62, 195, 0.8), rgba(181, 62, 195, 0.8)), url(images/pic02.jpg);
+        background-image:linear-gradient($color-mauve-claire-transparent, rgba(181, 62, 195, 0.8)), url(images/pic02.jpg);
         padding: 150px 50px 150px 50px;
         &:hover{
            background-image: url(images/pic02.jpg);
