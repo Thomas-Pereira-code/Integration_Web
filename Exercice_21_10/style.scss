@@ -1,0 +1,119 @@
+@mixin googleFont ($nom){
+    @import url('https://fonts.googleapis.com/css2?family=' + $nom + '&display=swap');
+}
+@include googleFont(Helvetica);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .droite{
+        display: flex;
+        padding: 5px;
+        gap: 10px;
+
+    }
+
+    .gauche{
+        display: flex;
+        
+        gap: 2px;
+        strong{
+            padding: 5px;
+            background-color: white;
+            color: rgba(4, 45, 126, 0.8) ;
+        }
+        span{
+            padding: 5px;
+        }
+    }
+    
+    background-color:rgba(4, 45, 126, 1);
+}
+
+.hero{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+     background-image:
+    linear-gradient(rgba(4, 45, 126, 0.8), rgba(4, 45, 126,0.8)),
+    url(images/banner.jpg);
+    
+    color: white;
+
+    h1{
+        font-size: 80px;
+    }
+    
+
+    .line{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 1px;
+        background-color: white;
+    }
+
+    .description{
+        display: flex;
+        gap: 25px;
+
+        p{
+           text-transform: uppercase;
+        }
+
+        .button{
+            display: flex;
+            border: 1px solid ;
+            padding: 10px;
+            gap: 10px;
+        }
+    }
+
+
+}
+
+.P1{
+    display: flex;
+    color: white;
+
+    .line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 1px;
+        background-color: white;
+        width: 200px;
+    }
+
+    .P1_gauche{
+        width: 35%;
+        background-image:linear-gradient(rgba(117, 217, 242, 0.8), rgba(117, 217, 242, 0.8)), url(images/pic01.jpg);
+        
+        padding: 150px 50px 150px 50px;
+        &:hover{
+            background-image: url(images/pic01.jpg);
+        }
+        
+    }
+
+
+
+    .P1_droite{
+        width: 65%;
+        background-image:linear-gradient(rgba(181, 62, 195, 0.8), rgba(181, 62, 195, 0.8)), url(images/pic02.jpg);
+        padding: 150px 50px 150px 50px;
+        &:hover{
+           background-image: url(images/pic02.jpg);
+        }
+    }
+}
